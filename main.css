@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li{
+    /*para ajustar o menu */
+    display: inline; 
+    font-family: Arial, Helvetica, sans-serif; /* tipo de fonte */
+    font-weight: bold; /* negrito */
+    margin-left: 16px; /* Para o espaçamento ir a esquerda-espaço entre eles - ou o espaço de cada texto*/ 
+}
+
+header li a {
+    /*para ajustar os links de esporte e economia de leia mais*/
+    color: #f5f6fa; /*cor do título dos links*/
+    text-decoration: none; /*sem o sublinhado */
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; /*espaço entre os artigos*/
+}
+
+.articles article img {
+    /* height: 180px;*/
+    width: 100%; /*imagem com 100% to tamanho do texto-acompanhando o texto*/
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue; /*essa estilização mudou depois, nas seções*/
+    color: #fff;/*o leia mais ficar na cor branco*/
+    padding: 8px;
+    display: inline-block; 
+    text-decoration: none; /*para o botao do leia mais ficar sem sublinhado*/
+    font-weight: bold; /*para o botao do leia mais ficar em negrito*/
+    margin-top: 8px; /*para o botao do leia mais ficar mais afastado do texto*/
+}
+
+.articles article a:hover /* efeito quando passamos o mouse por cima aplicamos o hover no seletor */{ 
+    /*quando passa o mouse por cima do leia mais, fica sublinhado*/
+    text-decoration: underline;
+}
+
+.articles article p, /*se refere aos paragrafos*/
+.articles article a /*se refere aos artigos*/{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    /*cor do fundo da seção de esportes*/
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+    /*cor do botão de leia mais no esportes*/
+    background-color: #009432;
+}
+
+#economy {
+    /*cor do fundo da seção de economia*/
+    background-color: #f8f5a7;
+}
+
+#economy .articles article a {
+    /*cor do botão de leia mais na economia*/
+    background-color:#ff9f1a;
+} 
+
+#politics {
+    background-color: rgb(249, 166, 166);
+}
+
+#politics .articles article a {
+    /*cor do botão de leia mais na economia*/
+    background-color:#ff1a1a;
+} 
+
+#agro {
+    background-color: #9afbbd;
+}
+
+#agro .articles article a {
+    /*cor do botão de leia mais na economia*/
+    background-color:#275020;
+} 
